@@ -4,7 +4,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import Alert from '@mui/material/Alert';
 */}
 import React from 'react';
-import "./app.css";
+import "./App.css";
 import SearchBox from './SearchBox';
 import InfoBox from './InfoBox';
 import WeatherApp from './WeatherApp';
