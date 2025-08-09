@@ -72,26 +72,23 @@ https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=m
 ---
 
 ## 🚀 Installation & Setup
-1. Clone the repository:
-   ```bash
+```bash
+# Clone the repository:
    git clone https://github.com/yourusername/weather-app.git
    cd weather-app
-```
-2. Install Dependencies:
-```
+
+# Install Dependencies:
     npm install
-```
-3. Get your OpenWeather API key from:
-```
+
+# Get your OpenWeather API key from:
     https://openweathermap.org/appid
-```
 
-4.  Create a .env file in the project root and add:
-```
+#  Create a .env file in the project root and add:
     REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
-```
 
-5. Start the development server:
-```
+# Start the development server:
     npm start
+
+    
+```
 
