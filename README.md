@@ -1,12 +1,90 @@
-# React + Vite
+# 🌦 Weather App by Vivek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive weather application built with **React**, **Material UI**, and the **OpenWeather API**.  
+The app allows users to search for weather information of any city and displays it instantly in a beautifully designed weather card with an image that updates dynamically based on the temperature.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Project Screenshot
+![Weather App Screenshot](src/assets/weather-app.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+- 🔍 **Search weather by city**  
+- 🌡 **Displays temperature, humidity, min & max temperature**  
+- ☀ **Dynamic weather card image updates based on temperature**  
+- ❌ **Handles errors when city does not exist**  
+- ⏱ **Instant data fetch and display**  
+- 🎨 **Clean UI with Material UI styling**  
+
+---
+
+## 🛠 Tech Stack
+- **React.js**
+- **Material UI (MUI)**
+- **Bootstrap (for additional styling)**
+- **OpenWeather API**
+
+---
+
+## 📂 Project Structure
+src/
+│
+├── components/
+│ ├── SearchBox.jsx # Search bar for entering city name
+│ ├── InfoBox.jsx # Displays weather information
+│ ├── WeatherApp.jsx # Main component handling logic & state
+│
+├── App.js # Main App entry
+├── index.js # React DOM rendering
+└── App.css # Styling
+
+
+---
+
+## ⚙️ How It Works
+1. User enters a **city name** in the search box.
+2. The app fetches weather data from **OpenWeather API**.
+3. If the city exists, it updates the **Weather Card** with:
+   - Temperature (°C)
+   - Humidity (%)
+   - Min & Max Temperature
+   - Weather description
+4. **Background image of the card** changes based on temperature:
+   - Hot → Sunny image
+   - Cold → Snowy image
+   - Moderate → Cloudy image
+5. If the city is invalid, an **error message** is displayed.
+
+---
+
+## 🔑 API Reference
+**OpenWeather API** – [https://openweathermap.org/api](https://openweathermap.org/api)  
+- Endpoint used: `/data/2.5/weather`
+- Units: Metric (°C)
+
+Example API call:
+https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
+
+
+---
+
+## 🚀 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
+   cd weather-app
+
+2. Install Dependencies:
+    npm install
+
+3. Get your OpenWeather API key from:
+    https://openweathermap.org/appid
+
+4.  Create a .env file in the project root and add:
+    REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
+
+5. Start the development server:
+    npm start
+
